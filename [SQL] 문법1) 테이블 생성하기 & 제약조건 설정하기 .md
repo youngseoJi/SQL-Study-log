@@ -7,7 +7,7 @@
 ### 테이블 생성하기 (제약넣기)
 - create 명령어로 테이블을 생성한다.
 
-> CREATE TABLE 테이블 명;
+> **CREATE** TABLE 테이블 명;
 
 >CREATE TABLE user (
   id int AUTO_INCREMENT PRIMARY KEY, 
