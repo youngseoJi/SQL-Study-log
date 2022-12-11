@@ -21,14 +21,14 @@ mySQL workbench에서 해당 데이터를 갖고 직접 selet 문으로 데이�
 
 ## 테이블 조회하기 (열 데이터)
 
-> **SELECT **  조회할 열 이름  **FROM** 테이블명;
+> **SELECT**  조회할 열 이름  **FROM** 테이블명;
 **select** \* **from** member;
 **select** mem_id **from** member;
 
 - member 테이블의 전체 데이터 조회, mem_id 열 데이터만 조회하기
 ![](https://images.velog.io/images/estell/post/c12ba9bf-a292-4469-a3df-82b492864721/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-23%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.24.36.png)![](https://images.velog.io/images/estell/post/71bd4f46-7690-4d80-a183-ca4d2bf47814/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-23%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.38.30.png)
 
-> **SELECT ** 조회할 열 이름 **FROM**  **WHERE**
+> **SELECT** 조회할 열 이름 **FROM**  **WHERE**
 **select** * **from** member **where** mem_name = '블랙핑크';
 
 - **select** 조회해라 **from** 멤버 테이블에서 **where** 블랙핑크인 멤버이름만!![](https://images.velog.io/images/estell/post/eee12df8-eaf1-490e-b5ae-0dd81fdc325f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-23%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.23.49.png)
@@ -42,7 +42,7 @@ mySQL workbench에서 해당 데이터를 갖고 직접 selet 문으로 데이�
 ('' 싱글쿼트도 가능, but insert 문에서 '문자'를 쓸때 보통 사용한다.)
 - 열 이름 + as 별명지정  
 
->**SELECT **열 이름** 별명, **열이름 **"별명 이다" FROM 테이블명**
+>**SELECT** 열 이름 **별명,** 열이름 **"별명" FROM 테이블명**
 
 select mem_name 그룹명, debut_date "데뷔 일자" from member; 
 
