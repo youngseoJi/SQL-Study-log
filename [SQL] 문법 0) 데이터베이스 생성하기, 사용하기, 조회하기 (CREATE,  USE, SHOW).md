@@ -1,0 +1,39 @@
+mySQL로 간단하게 테이블을 생성하는 등 방법을 알아봤었는데, 직접 sql 문법으로 데이터베이스를 생성하고, 조회하는 방법도 알아보자. 
+
+
+### 1. mysql 워크벤쳐 실헹
+>mysql 클릭 -> root 클릭 -> 비밀번호 입력 -> 접속완료
+![](https://velog.velcdn.com/images/estell/post/244463e9-8019-48be-9f4e-fff52333a529/image.png)
+
+
+### 2. 터미널 접속 방법
+>터미널로 mysql로 접속한다. 
+> ** mysql -u root -p !
+엔터  -> 생성했던 내 비번을 입력 -> 접속완료!**
+
+
+MySQL에서는 다음과 같은 CREATE 문을 사용하여 데이터베이스와 테이블을 만들 수 있습니다.
+
+##  데이터베이스 생성하기
+>**CREATE DATABASE 데이터베이스명;**
+ create database users;
+
+###  생성된 모든 데이터베이스 조회(확인)
+>** SHOW DATABASES **
+
+- users 데이터베이스가 생성된 것을 확인할 수 있다. 
+![](https://velog.velcdn.com/images/estell/post/916ffb20-7c7d-4634-ade9-8beab761713e/image.png)
+
+![](https://images.velog.io/images/estell/post/ea8f55a4-16b5-44f7-9dec-84b5b2434059/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-03-07%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.29.39.png)
+### 데이터베이스 사용하기 : use문 
+
+- use문: 데이터베이스를 사용하겠다는 명령이다.
+데이터베이스를 이용해 테이블을 만들거나 수정하거나 삭제하는 등의 작업을 하려면, 먼저 데이터베이스를 사용하겠다는 명령을 전달해야 한다.
+
+>**USE 데이터베이스_이름;**
+use users;
+
+- users라는 데이터 베이스를 사용하겠다라고 설정된 것이다.
+![](https://images.velog.io/images/estell/post/f832d750-bd81-4bdd-adb4-fcc3c22d5aa9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-03-07%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.32.21.png)
+
+이제 이 데이터 베이스 안에 테이블을 생성하고 조회하는 방법 등을 알아보자
